@@ -77,7 +77,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "desync-search", specifier = ">=0.2.29" }]
+requires-dist = [{ name = "desync-search" }]
 
 [[package]]
 name = "desync-search"

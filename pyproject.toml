@@ -1,7 +1,9 @@
 [project]
 name = "desync-data-processing-extension"
 version = "0.1.0"
-description = "Add your description here"
+description = "Y Combinator website scraper using Desync AI bulk search API"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "desync_search",
+]
