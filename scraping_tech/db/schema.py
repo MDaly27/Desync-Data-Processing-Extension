@@ -1,16 +1,19 @@
 """
 Database schema for YC website scraping project.
-Creates and manages the SQLite database at /home/vlad/warp/6_Databases/yc.sqlite
+Creates and manages the SQLite database at scraping_tech/data/yc.sqlite
 """
 
 import sqlite3
 from pathlib import Path
 
-DB_PATH = Path("/home/vlad/warp/6_Databases/yc.sqlite")
+# Relative path from this file's location
+DB_PATH = Path(__file__).parent.parent / "data" / "yc.sqlite"
 
 
 def get_connection() -> sqlite3.Connection:
     """Get a connection to the SQLite database."""
+    # Ensure the data directory exists
+    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn

@@ -6,10 +6,11 @@ Pipeline: get unvisited URLs -> bulk search -> save results -> mark visited -> r
 import json
 import os
 import sqlite3
+from pathlib import Path
 from typing import Optional
 
 _client = None
-DB_PATH = "../data/yc.sqlite"
+DB_PATH = Path(__file__).parent.parent / "data" / "yc.sqlite"
 
 
 def get_client():
