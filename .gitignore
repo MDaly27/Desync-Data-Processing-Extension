@@ -4,3 +4,8 @@ __pycache__/
 *.pyo
 .DS_Store
 .env
+Rust_Processing/target/
+Sqlite_Database/data/
+extras/
+*.sqlite
+*.db
