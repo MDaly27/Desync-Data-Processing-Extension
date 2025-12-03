@@ -1,7 +1,7 @@
 [project]
 name = "desync-data-processing-extension"
 version = "0.1.0"
-description = "Add your description here"
+description = "a fun extension that leverages desync ai's ability to get data with rust processing for yc companies"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
